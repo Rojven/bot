@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
 
-function App() {
+import Chat from "./components/Chat/Chat";
+import ChatSettings from "./components/ChatSettings/ChatSettings";
+
+import { useHttpRequest } from "./hooks/useHttpRequest";
+
+const chatInitialState = {
+    option1: '',
+    option2: '', 
+    option3: '',
+    option4: '', 
+    option5: '', 
+    option6: '',
+    answer1: '',
+    answer2: '',
+    answer3: '',
+    answer4: '',
+    answer5: '',
+    answer6: ''  
+}
+  
+const App = () => {
+
+  const { request } = useHttpRequest();
+
+  const [chatItems, setChatItems] = useState(chatInitialState);
+
+  useEffect(() => {
+    request('https://getbutton-bot.herokuapp.com/messages')
+        .then((data) => setChatItems(data));
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{fontFamily: 'Arial'}}>
+      <ChatSettings chatItems={chatItems} setChatItems={setChatItems}/>
+      <Chat chatItems={chatItems}/>
     </div>
-  );
+  )
 }
 
 export default App;

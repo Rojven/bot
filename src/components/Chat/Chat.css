@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.chat-trigger {
+    position: fixed;
+    bottom: 50px;
+    right: 50px; 
+    z-index: 9999; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+}
+
+.chat-trigger img {
+    width: 90%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.chat-window {
+    position: fixed; 
+    bottom: 110px;
+    right: 110px;
+    z-index: 9999; 
+    width: 300px; 
+    height: 600px; 
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    background-color: #f3f3f3;
+}
+
+.chat-window.hidden {
+    display: none;
+}
+
+.chat-header {
+    height: 50px; 
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #1260df;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.chat-header h2 {
+    color: white;
+    font-size: 20px;                         
+}
+
+.chat-header button {
+    color: white;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.messages-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 390px;
+    overflow: auto;
+}
+
+.message {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.message div:first-child { 
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center; 
+}
+
+.message div img {
+    width: 90%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.message div:last-child {
+    background-color: white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 1.4;
+}
+
+.message.user-message {
+    flex-direction: row-reverse;
+}
+
+.options-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    place-content: center;
+}
