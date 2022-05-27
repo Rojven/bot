@@ -35,7 +35,7 @@ const Chat = ({ chatItems }) => {
                             <div className="message user-message">
                                 <div>
                                     <img
-                                        src="https://cdn-icons.flaticon.com/png/512/3177/premium/3177440.png?token=exp=1653644292~hmac=380c948d508c29c7fd7ff98b2f078f73" 
+                                        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
                                         alt="#"
                                     />
                                 </div>
@@ -56,7 +56,7 @@ const Chat = ({ chatItems }) => {
                             <div className="message user-message">
                                 <div>
                                     <img
-                                        src="https://cdn-icons.flaticon.com/png/512/3177/premium/3177440.png?token=exp=1653644292~hmac=380c948d508c29c7fd7ff98b2f078f73" 
+                                        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
                                         alt="#"
                                     />
                                 </div>
@@ -77,7 +77,7 @@ const Chat = ({ chatItems }) => {
                             <div className="message user-message">
                                 <div>
                                     <img
-                                        src="https://cdn-icons.flaticon.com/png/512/3177/premium/3177440.png?token=exp=1653644292~hmac=380c948d508c29c7fd7ff98b2f078f73" 
+                                        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
                                         alt="#"
                                     />
                                 </div>
@@ -98,7 +98,7 @@ const Chat = ({ chatItems }) => {
                             <div className="message user-message">
                                 <div>
                                     <img
-                                        src="https://cdn-icons.flaticon.com/png/512/3177/premium/3177440.png?token=exp=1653644292~hmac=380c948d508c29c7fd7ff98b2f078f73" 
+                                        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
                                         alt="#"
                                     />
                                 </div>
@@ -119,7 +119,7 @@ const Chat = ({ chatItems }) => {
                             <div className="message user-message">
                                 <div>
                                     <img
-                                        src="https://cdn-icons.flaticon.com/png/512/3177/premium/3177440.png?token=exp=1653644292~hmac=380c948d508c29c7fd7ff98b2f078f73" 
+                                        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
                                         alt="#"
                                     />
                                 </div>
@@ -140,7 +140,7 @@ const Chat = ({ chatItems }) => {
                             <div className="message user-message">
                                 <div>
                                     <img
-                                        src="https://cdn-icons.flaticon.com/png/512/3177/premium/3177440.png?token=exp=1653644292~hmac=380c948d508c29c7fd7ff98b2f078f73" 
+                                        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
                                         alt="#"
                                     />
                                 </div>
